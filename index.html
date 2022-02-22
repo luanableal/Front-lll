@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olaaaaaá!</title>
+</head>
+<body>
+
+    <div id="container">
+
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script>
+      var h1 = React.createElement("h1", {style:{ color:'blue', textAlign:'center'}, id: "obrigatorio"}, "Olá Mundo, sou a Luana!!");
+      var ul = React.createElement("ul", { style: { color: 'red' }, id: "opcional" }, "Sobre mim:");
+      var li = React.createElement("li", { style: { color: 'black' }, id: "dados" }, "Sobrenome: Borges");
+      var li2 = React.createElement("li", { style: { color: 'black' }, id: "dados" }, "Idade: 36");
+      var li3 = React.createElement("li", { style: { color: 'black' }, id: "dados" }, "Adoro: Dormir");
+      var li4 = React.createElement("li", { style: { color: 'black' }, id: "dados" }, "Curiosidas: Esqueci tudo dos outrso bimestres!");
+
+      var container = React.createElement("div",{},[ h1, ul, li, li2, li3, li4]);
+
+      ReactDOM.render(container, document.getElementById("container"));
+    </script>
+    
+</body>
+</html>
